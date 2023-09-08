@@ -1,0 +1,14 @@
+{
+	"manifest_version": 3,
+	"name": "tver help",
+	"version": "1.0.2",
+	"permissions": [ "contextMenus", "storage" ],
+	"content_scripts": [ {
+		"js": [ "jquery-3.6.0.min.js", "content.js" ],
+		"matches": [ "*://*.tver.jp/*" ],
+		"run_at": "document_start"
+	} ],
+	"action": {
+		"default_popup": "popup.html"
+	}
+}
